@@ -1,0 +1,785 @@
+[gd_scene load_steps=2 format=3 uid="uid://w2wseuggjxyw"]
+
+[ext_resource type="Script" path="res://homework_helper.gd" id="1_wrt3c"]
+
+[node name="HomeworkHelper" type="Node"]
+script = ExtResource("1_wrt3c")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Header" type="ColorRect" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 66.0
+grow_horizontal = 2
+color = Color(0.764706, 0.764706, 0.764706, 1)
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 8.0
+offset_bottom = 60.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Step By Step Quadratic Equations"
+horizontal_alignment = 1
+
+[node name="QuestionLabel" type="Label" parent="."]
+anchors_preset = -1
+anchor_top = 0.15
+anchor_bottom = 0.15
+offset_left = 18.0
+offset_top = -19.2
+offset_right = 216.0
+offset_bottom = 43.8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Question:"
+
+[node name="MethodLabel" type="Label" parent="."]
+anchors_preset = -1
+anchor_top = 0.616
+anchor_bottom = 0.616
+offset_left = 19.0
+offset_top = -236.168
+offset_right = 180.0
+offset_bottom = -178.168
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Method:"
+
+[node name="ErrorText" type="Label" parent="."]
+offset_left = 740.0
+offset_top = 67.0
+offset_right = 1134.0
+offset_bottom = 160.0
+theme_override_colors/font_color = Color(0.662745, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Note: Anything other than whole positive numbers probably won't work"
+autowrap_mode = 2
+
+[node name="A" type="TextEdit" parent="."]
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 230.0
+offset_top = -149.688
+offset_right = 311.0
+offset_bottom = -84.688
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_readonly_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/current_line_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_background_color = Color(0, 0, 0, 1)
+theme_override_colors/word_highlighted_color = Color(0, 0, 0, 1)
+theme_override_colors/search_result_color = Color(0, 0, 0, 1)
+theme_override_colors/search_result_border_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+placeholder_text = "a"
+wrap_mode = 1
+
+[node name="B" type="TextEdit" parent="."]
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 407.0
+offset_top = -148.688
+offset_right = 488.0
+offset_bottom = -83.688
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_readonly_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/current_line_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_background_color = Color(0, 0, 0, 1)
+theme_override_colors/word_highlighted_color = Color(0, 0, 0, 1)
+theme_override_colors/search_result_color = Color(0, 0, 0, 1)
+theme_override_colors/search_result_border_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+placeholder_text = "b"
+wrap_mode = 1
+
+[node name="C" type="TextEdit" parent="."]
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 563.0
+offset_top = -150.688
+offset_right = 648.0
+offset_bottom = -80.688
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_readonly_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/current_line_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_background_color = Color(0, 0, 0, 1)
+theme_override_colors/word_highlighted_color = Color(0, 0, 0, 1)
+theme_override_colors/search_result_color = Color(0, 0, 0, 1)
+theme_override_colors/search_result_border_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+placeholder_text = "c"
+wrap_mode = 1
+
+[node name="MethodButton" type="OptionButton" parent="."]
+offset_left = 190.0
+offset_top = 157.0
+offset_right = 887.0
+offset_bottom = 233.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+item_count = 5
+selected = 0
+popup/item_0/text = "Select Method"
+popup/item_0/id = 0
+popup/item_1/text = "Factoring"
+popup/item_1/id = 1
+popup/item_2/text = "Square Root Property"
+popup/item_2/id = 2
+popup/item_3/text = "Completing the Square"
+popup/item_3/id = 3
+popup/item_4/text = "Quadratic Formula"
+popup/item_4/id = 4
+
+[node name="StartButton" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.905
+anchor_right = 1.0
+anchor_bottom = 0.905
+offset_left = -200.0
+offset_top = -426.44
+offset_right = -78.0
+offset_bottom = -355.44
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "Go!"
+
+[node name="Equation" type="Label" parent="."]
+offset_left = 320.0
+offset_top = 88.0
+offset_right = 550.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "x   +          x +           = 0"
+
+[node name="Exponent" type="Label" parent="."]
+offset_left = 345.0
+offset_top = 65.0
+offset_right = 380.0
+offset_bottom = 123.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "2"
+
+[node name="Factoring" type="Node" parent="."]
+
+[node name="Step1" type="Node" parent="Factoring"]
+
+[node name="Equation" type="Label" parent="Factoring/Step1"]
+visible = false
+offset_left = 362.0
+offset_top = 399.0
+offset_right = 874.0
+offset_bottom = 457.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "(         x   +          x +           )= 0"
+
+[node name="Exponent" type="Label" parent="Factoring/Step1"]
+visible = false
+offset_left = 490.0
+offset_top = 376.0
+offset_right = 525.0
+offset_bottom = 434.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "2"
+
+[node name="In1" type="TextEdit" parent="Factoring/Step1"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 271.0
+offset_top = 169.312
+offset_right = 349.0
+offset_bottom = 225.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="In2" type="TextEdit" parent="Factoring/Step1"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 377.0
+offset_top = 169.312
+offset_right = 455.0
+offset_bottom = 225.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="In3" type="TextEdit" parent="Factoring/Step1"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 549.0
+offset_top = 170.312
+offset_right = 627.0
+offset_bottom = 226.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="In4" type="TextEdit" parent="Factoring/Step1"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 709.0
+offset_top = 170.312
+offset_right = 787.0
+offset_bottom = 226.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="Step2" type="Node" parent="Factoring"]
+
+[node name="Equation" type="Label" parent="Factoring/Step2"]
+visible = false
+offset_left = 75.0
+offset_top = 373.0
+offset_right = 587.0
+offset_bottom = 431.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "(x +          )(x +          ) = 0"
+
+[node name="Factors1" type="Label" parent="Factoring/Step2"]
+visible = false
+offset_left = 669.0
+offset_top = 317.0
+offset_right = 899.0
+offset_bottom = 369.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Factors of ___:"
+
+[node name="Factors2" type="Label" parent="Factoring/Step2"]
+visible = false
+offset_left = 670.0
+offset_top = 367.0
+offset_right = 1082.0
+offset_bottom = 583.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+autowrap_mode = 2
+
+[node name="In1" type="TextEdit" parent="Factoring/Step2"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 153.0
+offset_top = 141.312
+offset_right = 231.0
+offset_bottom = 197.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="In2" type="TextEdit" parent="Factoring/Step2"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 329.0
+offset_top = 142.312
+offset_right = 407.0
+offset_bottom = 198.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="Step3" type="Node" parent="Factoring"]
+
+[node name="Equation" type="Label" parent="Factoring/Step3"]
+visible = false
+offset_left = 99.0
+offset_top = 360.0
+offset_right = 611.0
+offset_bottom = 418.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "x +          = 0                                                x +           = 0
+x =                                                                x = "
+
+[node name="In1" type="TextEdit" parent="Factoring/Step3"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 165.0
+offset_top = 129.312
+offset_right = 243.0
+offset_bottom = 185.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="In2" type="TextEdit" parent="Factoring/Step3"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 165.0
+offset_top = 189.312
+offset_right = 243.0
+offset_bottom = 245.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="In3" type="TextEdit" parent="Factoring/Step3"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 860.0
+offset_top = 131.312
+offset_right = 938.0
+offset_bottom = 187.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="In4" type="TextEdit" parent="Factoring/Step3"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 861.0
+offset_top = 190.312
+offset_right = 939.0
+offset_bottom = 246.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="Square Root Property" type="Node" parent="."]
+
+[node name="Completing the Square" type="Node" parent="."]
+
+[node name="Quadratic Formula" type="Node" parent="."]
+
+[node name="Step1" type="Node" parent="Quadratic Formula"]
+
+[node name="QuadraticEquation1" type="Label" parent="Quadratic Formula/Step1"]
+visible = false
+offset_left = 283.0
+offset_top = 408.0
+offset_right = 881.0
+offset_bottom = 466.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "x = -----------------------------------------"
+
+[node name="QuadraticEquation2" type="Label" parent="Quadratic Formula/Step1"]
+visible = false
+offset_left = 345.0
+offset_top = 377.0
+offset_right = 884.0
+offset_bottom = 493.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "         ± √(        )   - 4(        )(        )
+                2(        ) "
+
+[node name="Exponent" type="Label" parent="Quadratic Formula/Step1"]
+visible = false
+offset_left = 599.0
+offset_top = 355.0
+offset_right = 633.0
+offset_bottom = 413.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "2"
+
+[node name="In1" type="TextEdit" parent="Quadratic Formula/Step1"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 348.0
+offset_top = 140.312
+offset_right = 426.0
+offset_bottom = 196.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+placeholder_text = "b"
+wrap_mode = 1
+
+[node name="In2" type="TextEdit" parent="Quadratic Formula/Step1"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 505.0
+offset_top = 142.312
+offset_right = 583.0
+offset_bottom = 198.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+placeholder_text = "b"
+wrap_mode = 1
+
+[node name="In3" type="TextEdit" parent="Quadratic Formula/Step1"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 685.0
+offset_top = 143.312
+offset_right = 763.0
+offset_bottom = 199.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+placeholder_text = "a"
+wrap_mode = 1
+
+[node name="In4" type="TextEdit" parent="Quadratic Formula/Step1"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 539.0
+offset_top = 215.312
+offset_right = 617.0
+offset_bottom = 271.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+placeholder_text = "a"
+wrap_mode = 1
+
+[node name="In5" type="TextEdit" parent="Quadratic Formula/Step1"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 791.0
+offset_top = 143.312
+offset_right = 869.0
+offset_bottom = 199.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+placeholder_text = "c"
+wrap_mode = 1
+
+[node name="Step2" type="Node" parent="Quadratic Formula"]
+
+[node name="QuadraticEquation1" type="Label" parent="Quadratic Formula/Step2"]
+visible = false
+offset_left = 384.0
+offset_top = 406.0
+offset_right = 982.0
+offset_bottom = 464.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "x = ----------------"
+
+[node name="QuadraticEquation2" type="Label" parent="Quadratic Formula/Step2"]
+visible = false
+offset_left = 446.0
+offset_top = 375.0
+offset_right = 985.0
+offset_bottom = 491.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "         ± 
+       "
+
+[node name="In1" type="TextEdit" parent="Quadratic Formula/Step2"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 449.0
+offset_top = 138.312
+offset_right = 527.0
+offset_bottom = 194.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="In2" type="TextEdit" parent="Quadratic Formula/Step2"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 566.0
+offset_top = 139.312
+offset_right = 644.0
+offset_bottom = 195.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="In3" type="TextEdit" parent="Quadratic Formula/Step2"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 507.0
+offset_top = 221.312
+offset_right = 585.0
+offset_bottom = 277.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="Step3" type="Node" parent="Quadratic Formula"]
+
+[node name="QuadraticEquation1" type="Label" parent="Quadratic Formula/Step3"]
+visible = false
+offset_left = 131.0
+offset_top = 394.0
+offset_right = 729.0
+offset_bottom = 452.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "x = ---------------- = "
+
+[node name="QuadraticEquation2" type="Label" parent="Quadratic Formula/Step3"]
+visible = false
+offset_left = 193.0
+offset_top = 363.0
+offset_right = 732.0
+offset_bottom = 479.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "(      ) + (      )
+      	(      )       "
+
+[node name="QuadraticEquation3" type="Label" parent="Quadratic Formula/Step3"]
+visible = false
+offset_left = 555.0
+offset_top = 390.752
+offset_right = 1153.0
+offset_bottom = 448.752
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "x = ---------------- = "
+
+[node name="QuadraticEquation4" type="Label" parent="Quadratic Formula/Step3"]
+visible = false
+offset_left = 614.0
+offset_top = 360.0
+offset_right = 1153.0
+offset_bottom = 476.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "(      ) - (      )
+      	(      )       "
+
+[node name="FinalAnswer" type="Label" parent="Quadratic Formula/Step3"]
+visible = false
+offset_left = 358.0
+offset_top = 486.0
+offset_right = 956.0
+offset_bottom = 544.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "x =         and    "
+
+[node name="In1" type="TextEdit" parent="Quadratic Formula/Step3"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 445.0
+offset_top = 164.312
+offset_right = 523.0
+offset_bottom = 220.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="In2" type="TextEdit" parent="Quadratic Formula/Step3"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 419.0
+offset_top = 256.312
+offset_right = 497.0
+offset_bottom = 312.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="In3" type="TextEdit" parent="Quadratic Formula/Step3"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 583.0
+offset_top = 257.312
+offset_right = 661.0
+offset_bottom = 313.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="In4" type="TextEdit" parent="Quadratic Formula/Step3"]
+visible = false
+anchors_preset = -1
+anchor_top = 0.356
+anchor_bottom = 0.356
+offset_left = 873.0
+offset_top = 161.312
+offset_right = 951.0
+offset_bottom = 217.312
+theme_override_colors/background_color = Color(0.796078, 0.796078, 0.796078, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+wrap_mode = 1
+
+[node name="StepLabel" type="Label" parent="."]
+visible = false
+offset_left = 17.0
+offset_top = 238.0
+offset_right = 1116.0
+offset_bottom = 395.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Step 1: Example step is very long and could be a paragraph at max"
+autowrap_mode = 2
+
+[node name="Next" type="Button" parent="."]
+visible = false
+offset_left = 1017.0
+offset_top = 565.0
+offset_right = 1105.0
+offset_bottom = 622.0
+theme_override_font_sizes/font_size = 35
+text = "Next"
+
+[node name="Check" type="Button" parent="."]
+visible = false
+offset_left = 38.0
+offset_top = 566.0
+offset_right = 147.0
+offset_bottom = 623.0
+theme_override_font_sizes/font_size = 35
+text = "Check"
+
+[node name="New" type="Button" parent="."]
+visible = false
+offset_left = 803.0
+offset_top = 561.0
+offset_right = 1137.0
+offset_bottom = 624.0
+theme_override_font_sizes/font_size = 35
+text = "Ask a new question"
+
+[node name="Correct" type="Label" parent="."]
+offset_left = 157.0
+offset_top = 577.0
+offset_right = 971.0
+offset_bottom = 629.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Check" to="." method="_on_check_pressed"]
+[connection signal="pressed" from="New" to="." method="_on_new_pressed"]
